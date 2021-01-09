@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: "outgoingMessage",
+  name: "OutgoingMessage",
   props:['name','time','text']
 }
 </script>

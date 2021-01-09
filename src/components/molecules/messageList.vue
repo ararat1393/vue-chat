@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import subject from "../atoms/subject";
+import subject from "@/components/atoms/Subject";
 export default {
-  name: "messageList",
+  name: "MessageList",
   components: {subject},
   props:['lists'],
 }

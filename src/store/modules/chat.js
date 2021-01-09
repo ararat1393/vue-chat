@@ -58,41 +58,20 @@ const state = {
       ],
     },
   ],
-  dialog:[],
-  me:null
 }
 
 const getters = {
   getMessagesList: function (state){
     return state.chat;
   },
-  getDialog: function (state) {
-    return state.dialog;
-  },
-  getMe: function (state) {
-    return state.me;
-  }
 }
 
 const mutations = {
-  SET_DIALOG:function (state,dialog){
-    state.dialog = dialog;
-  },
-  SET_USER: function (state,user){
-    state.me = user;
-  },
-  UPDATE_DIALOG: function (state, me){
-    me.id = state.dialog.length + 1;
-    state.dialog.push(me);
-  }
+
 }
 
 const actions = {
-  fetchChat({commit,state}){
-    return new Promise((resolve, reject) => {
-      return resolve(state.chat);
-    })
-  }
+
 }
 
 export default {state,getters,mutations,actions}

@@ -18,14 +18,13 @@
 <script>
 import MessageList from "@/components/molecules/messageList";
 import {mapGetters} from 'vuex';
-import SendMessage from "./atoms/sendMessage";
-import SubjectDialog from "./molecules/subjectDialog";
+import SendMessage from "@/components/atoms/SendMessage";
+import SubjectDialog from "@/components/molecules/SubjectDialog";
 
 export default {
   name: "Chat",
   components: {SubjectDialog, SendMessage, MessageList},
   data:()=>({
-    listsAreReady:false,
     currentDialog:{},
     currentUser:{
       type:'incoming',

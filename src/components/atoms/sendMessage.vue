@@ -23,10 +23,10 @@
 <script>
 import moment from "moment";
 export default {
-  name: "sendMessage",
+  name: "SendMessage",
   props:['user','dialog'],
   data:()=>({
-    sending:true
+    sending:false
   }),
   methods:{
     send(){
@@ -51,5 +51,7 @@ export default {
 </script>
 
 <style scoped>
-
+  button:focus{
+    outline: unset;
+  }
 </style>

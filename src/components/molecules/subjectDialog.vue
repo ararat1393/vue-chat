@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Messages from "./messages";
+import Messages from "@/components/molecules/Messages";
 
 export default {
   name: "subjectDialog",

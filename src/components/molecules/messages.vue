@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import IncomingMessage from "../atoms/incomingMessage";
-import OutgoingMessage from "../atoms/outgoingMessage";
+import IncomingMessage from "@/components/atoms/IncomingMessage";
+import OutgoingMessage from "@/components/atoms/OutgoingMessage";
 export default {
   name: "messages",
   props:['parts'],
